@@ -1,14 +1,22 @@
+---
+const pageTitle = "Новости";
+---
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Почему я</title>
+    <title>{pageTitle}</title><!-- Новости -->
   </head>
 <body>
 <a href="/">Главная</a>
 <a href="/about/">Почему я</a>
-<a href="/blog/">Новости</a>
+<a href="/blog/">{pageTitle}</a><!-- Новости -->
   <h1>Запуск сайта</h1>
   <p>Данный сайт запущен в феврале 2026 года.
+  <ul>
+      <li><a href="/posts/post-1/">Пост 1</a></li>
+      <li><a href="/posts/post-2/">Пост 2</a></li>
+      <li><a href="/posts/post-3/">Пост 3</a></li>
+    </ul>
 </body>
 </html>
