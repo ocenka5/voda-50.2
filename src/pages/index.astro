@@ -1,19 +1,22 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import './styles/global.css';
 const pageTitle = "Главная";
 ---
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>{pageTitle}</title><!-- Главная -->
+    <title>{pageTitle}</title>
   </head>
 <body>
-<a href="/">{pageTitle}</a><!-- Главная -->
-<a href="/about/">Почему я</a>
-<a href="/blog/">Новости</a>
+<Header  />
+  <!-- <h1>{pageTitle}</h1> -->
   <h1>Добро пожаловать на мой сайт!</h1>
   <p>Меня зовут Александр, я профессионал по системам водоподготовки, водоснабжения и отопления. 
   <p>Я оказываю услуги по монтажу в частных домах, квартирах и т.д. все работы выполняю под ключ и с гарантией. 
   <p>Территориально я нахожусь в Московской области, город Долгопрудный.
+      <Footer />
 </body>
 </html>

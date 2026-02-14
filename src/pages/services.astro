@@ -1,0 +1,20 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import './styles/global.css';
+const pageTitle = "Услуги";
+---
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{pageTitle}</title>
+  </head>
+<body>
+<Header  />
+  <h1>{pageTitle}</h1>
+ <h2>Монтаж фильтров очистки воды</h2>
+ <a href="./media/2026/osmos.jpg"><img src="./media/2026/osmos_30.jpg" alt="Система обратного осмоса, для питьевой воды, удаляет все вирусы и микробы на 99,9%"></a>
+  <Footer />
+</body>
+</html>
