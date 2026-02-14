@@ -1,7 +1,21 @@
-<div class="nav-links">
+<header>
+<button class="hamburger" id="hamburger-btn">☰</button>
+<div class="nav-links" id="nav-links">
 <a href="/">Главная</a>
 <a href="/services/">Услуги</a>
 <a href="/contacts/">Контакты</a>
 <a href="/about/">Почему я</a>
 <a href="/blog/">Новости</a>
 </div>
+</header>
+<script>
+  // Этот код будет выполняться только в браузере
+  const hamburger = document.getElementById('hamburger-btn');
+  const navLinks = document.getElementById('nav-links');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('expanded');
+    });
+  }
+</script>

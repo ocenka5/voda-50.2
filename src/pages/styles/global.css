@@ -6,7 +6,7 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-max-width:  80ch; /* 80ch; */ 
+  max-width: 80ch;
   padding: 1rem;
   line-height: 1.5;
 }
@@ -20,17 +20,9 @@ h1 {
   font-size: 2.5rem;
 }
 
-/* стили для навигации */
+/* ===== СТИЛИ ДЛЯ НАВИГАЦИИ ===== */
 
-.nav-links {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
-  display: none;
-  margin: 0;
-}
-
+/* Базовые стили для ссылок навигации */
 .nav-links a {
   display: block;
   text-align: center;
@@ -46,11 +38,57 @@ h1 {
   background-color: #ff9776;
 }
 
-.expanded {
-  display: unset;
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ (до 635px) ===== */
+@media screen and (max-width: 635px) {
+  /* Гамбургер кнопка */
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #333;
+  }
+
+  /* Меню по умолчанию скрыто */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    background-color: #ff9776;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Стили для ссылок в мобильном меню */
+  .nav-links a {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  /* Анимация появления */
+  .nav-links.expanded {
+    display: block;
+    animation: slideDown 0.3s ease-in-out;
+  }
 }
 
+/* ===== ДЕСКТОПНАЯ ВЕРСИЯ (от 636px) ===== */
 @media screen and (min-width: 636px) {
+  /* Скрываем гамбургер на десктопе */
+  .hamburger {
+    display: none;
+  }
+
+  /* Показываем меню горизонтально */
   .nav-links {
     margin-left: 5em;
     display: block;
@@ -63,5 +101,16 @@ h1 {
     display: inline-block;
     padding: 15px 20px;
   }
+}
 
+/* ===== АНИМАЦИИ ===== */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
