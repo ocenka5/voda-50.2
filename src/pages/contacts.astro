@@ -1,0 +1,28 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import './styles/global.css';
+const pageTitle = "Контакты";
+---
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{pageTitle}</title>
+  </head>
+<body>
+<Header  />
+  <h1>{pageTitle}</h1>
+  <h2>Телефон</h2>
+  <p>+7(999)840-43-30 Александр</p>
+  <p>Буду признателен, если в разговоре со мной Вы упомянете, что узнали мой номер телефона на этом сайте.</p>
+    <h2>Электронная почта</h2>
+  <p>79169549080@ya.ru (этот адрес принадлежит моему помощнику)</p>
+   <p>На электронные письма я стараюсь отвечать в течение суток.</p>
+   <h2>Основной сайт</h2>
+  <p><a href="http://voda50.ru/">voda50.ru</a></p>
+  <h2>Синоним основного сайта в домене РФ</h2>
+  <p><a href="http://вода50.рф/">вода50.рф</a></p>
+  <Footer />
+</body>
+</html>
