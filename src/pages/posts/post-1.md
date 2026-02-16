@@ -4,8 +4,8 @@ pubDate: 2022-07-01
 description: 'Это первый пост моего нового Astro блога.'
 author: 'Ученик Astro'
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'Логотип Astro на тёмном фоне с розовым свечением.'
+    url: ''
+    alt: 'Логотип'
 tags: ["astro", "ведение блога", "обучение в открытом доступе"]
 ---
 # Моя первая запись в блоге
