@@ -1,6 +1,6 @@
 ---
-title: 'Моя первая запись в блоге'
-pubDate: 2022-07-01
+title: 'Гидроудар'
+pubDate: 2023-02-23
 description: 'Это первый пост моего нового Astro блога.'
 author: 'Ученик Astro'
 image:
